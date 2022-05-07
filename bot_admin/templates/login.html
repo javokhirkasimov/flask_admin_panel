@@ -37,6 +37,9 @@
                 {% endfor %}
             {% endif %}
         {% endwith %}
+        {% if session.get('_user_id') %}
+            <h5 class="mt-5"><a href="/admin"><- Back to Admin Panel</a></h5>
+        {% endif %}
     </div>
 </body>
 </html>
